@@ -55,6 +55,9 @@ describe "temperature conversion functions" do
 
     it "converts body temperature" do
       ctof(37).should be_within(0.1).of(98.6)
+      ctof(37).should be_within(0.5).of(98.6)
+      ctof(37).should be_within(0.4).of(98.6)
+
       # Why do we need to use be_within?
       # See http://www.ruby-forum.com/topic/169330
       # and http://en.wikipedia.org/wiki/IEEE_754-2008
