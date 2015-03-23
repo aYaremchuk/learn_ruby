@@ -16,4 +16,5 @@ class Book
     end
     @title = @title.join(" ")
   end
+  
 end
